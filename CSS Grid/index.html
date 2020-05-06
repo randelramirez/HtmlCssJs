@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <title>CSS Grid</title>
+  <meta charset="UTF-8" />
+  <style>
+    div#grid {
+      width: 50%;
+      display: grid;
+      grid-auto-flow: row;
+      grid-column-gap: 5px;
+      grid-row-gap: 10px;
+      grid-template-columns: 1fr 200px 100px;
+      grid-template-rows: 100px 1fr 100px 100px 80px;
+    }
+  </style>
+  <head></head>
+  <body>
+    <div id="grid">
+      <div style="background-color: red;">red</div>
+      <div style="background-color: blue;">blue</div>
+      <div style="background-color: green;">green</div>
+
+      <div style="background-color: yellow;">yellow</div>
+      <div style="background-color: orange; height: 150px;">orange</div>
+      <div style="background-color: turquoise; height: 300px;">turquoise</div>
+
+      <div style="background-color: darkseagreen;">darkseagreen</div>
+      <div style="background-color: brown; grid-row: span 2;">
+        (brown spans to the next row, under it)
+      </div>
+      <div style="background-color: lawngreen;">lawngreen</div>
+
+      <div style="background-color: pink; grid-column: span 2;">pink</div>
+      <div style="background-color: rebeccapurple;">rebeccapurple</div>
+
+      <div style="background-color: silver;">silver</div>
+      <!--Width is inherited from 1st row, height???-->
+      <div style="background-color: gold;">
+        gold(not part of grid definition)
+      </div>
+      <div style="background-color: olive;">
+        olive(not part of grid definition)
+      </div>
+    </div>
+  </body>
+</html>
