@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Background image overlayed by gradient</title>
+    <style>
+      .container1 {
+        width: 100%;
+        height: 800px;
+        background: linear-gradient(
+            to top,
+            rgba(80, 68, 18, 0.6) 10%,
+            transparent
+          ),
+          url('./programming.jpg') #ff1b68 no-repeat;
+      }
+
+      .container1 h1 {
+        position: relative;
+        bottom: 5px;
+      }
+
+      .container2 {
+        background: url('./programming.jpg') no-repeat;
+        width: 100%;
+        height: 800px;
+      }
+
+      .container2 h1 {
+        position: relative;
+        bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container1"><h1>With Gradient Overlay</h1></div>
+    <div class="container2"><h1>Without Gradient Overlay</h1></div>
+  </body>
+</html>
